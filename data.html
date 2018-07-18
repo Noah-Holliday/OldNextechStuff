@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Code Practice</title>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+        <script type="text/javascript" src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+        <!-- <script src="vizUtil.js" type="text/javascript" charset="utf-8"></script> -->
+        <script src="data1.js" type="text/javascript" charset="utf-8"></script>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <header>
+    
+                <p class="link">
+                    <a href="game.html">My First Game!</a>
+                    <a href="home.html">Home</a>
+                    <a href="index.html">Bio</a>
+                    <a href="project.html">My Other Projects</a>
+                    <a href="contact.html">Contact Me!</a>
+                </p>
+                <h1>Data Visualization</h1>
+    </header>
+    <body onload="init();">
+
+        <div id='questionsWrapper'>Do you know where your tax money is going?
+            <br>What does Indiana spend it's tax money most on average?
+            <select id='q1'>
+                <option value="volvo">Education</option>
+                <option value="saab">Transportaion</option>
+                <option value="mercedes">Health Care</option>
+                <option value="audi">Welfare</option>
+            </select>
+            <br>What does Indiana spend it's tax money least on average?
+            <select id='q2'>
+                <option value="volvo">Defense</option>
+                <option value="saab">General Government</option>
+                <option value="mercedes">Intrest</option>
+                <option value="audi">Other Spending</option>
+            </select>
+            <br>What has be on an upward trend for the last six decades?
+            <select id='q3'>
+                <option value="volvo">Pensions</option>
+                <option value="saab">Protection</option>
+                <option value="mercedes">Transporation</option>
+                <option value="audi">General Government</option>
+            </select>
+             <br>What do you think Indiana has spent it's money most recently?
+            <select id='q4'>
+                <option value="volvo">Education</option>
+                <option value="saab">Transportaion</option>
+                <option value="mercedes">Health Care</option>
+                <option value="audi">Welfare</option>
+            </select>
+
+            <br>
+            <button id='finished' onclick="$('#wrapper').css('visibility', '');">Done</button>
+        </div>
+        <div id='wrapper'>
+             <h1>3 Minds</h1>
+            <p>We're doing charts on the government of Indiana's spending, in hopes of giving the people of Indiana an idea of how their tax money is being spent.</p>
+             <h1>Government Spending</h1>
+            <p>The money that the goverment collects through taxes are used for funding, and so the people of the country have a right to know where that money goes. The following charts give data on where their money is being spent, keep in mind however
+                that the information we have only lists percentages, and not the total amount of money collected throughout the year.</p>
+            <div id="yearContainer">
+                <select id='year'>
+                    <option value="0">1957</option>
+                    <option value="1">1960</option>
+                    <option value="2">1965</option>
+                    <option value="3">1970</option>
+                    <option value="4">1975</option>
+                    <option value="5">1980</option>
+                    <option value="6">1985</option>
+                    <option value="7">1990</option>
+                    <option value="8">1995</option>
+                    <option value="9">2000</option>
+                    <option value="10">2005</option>
+                    <option value="11">2010</option>
+                    <option value="12">2015</option>
+                    <option value="13">2016</option>
+                    <option value="14">2017</option>
+                    <option value="15">2018</option>
+                </select>
+            </div>
+            <div id="panel1"></div>
+             <h1>Pie Graph</h1>
+
+            <div id="panel2"></div>
+
+             <h1>Stacked Bar Graph</h1>
+            <div id="panel3"></div>
+
+             <h1>Line Graph</h1>
+            <p>The charts above provide data on how the goverment spends it's money, do you think that perhaps the goverment spends too much money in some locations, or perhaps the goverment spends too little on items that you may consider much more important
+                to fund than something else on the list. Either way these charts were made so you could ask questions like this, and come to conclusions on your own.</p>
+
+             <a href="http://www.in.gov/core/#Transparency">http://www.in.gov/core/#Transparency</a>
+
+             <a href="http://www.usgovernmentspending.com/year_spending_1990INbs_18bs2n_402060#usgs302">http://www.usgovernmentspending.com/year_spending_1990INbs_18bs2n_402060#usgs302</a>
+
+             <a href="https://docs.google.com/spreadsheets/d/1OhDcsrGFile5JsMeQAZ7WogUwSZAJY5qCIRd7xBHhYg/pubhtml">https://docs.google.com/spreadsheets/d/1OhDcsrGFile5JsMeQAZ7WogUwSZAJY5qCIRd7xBHhYg/pubhtml</a>
+
+            <footer>Noah Holliday, Christopher Beinart and Jalen Walker
+                <br>2017
+            </footer>
+        </div>
+    </body>

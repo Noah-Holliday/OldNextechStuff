@@ -1,0 +1,48 @@
+body {
+    background-color: white;
+}
+
+h4 {
+    margin-top: 2%;
+}
+
+p {
+    font-size: 18px;
+}
+
+.description {
+    margin: 2%;
+}
+
+#panel1, #panel2, #panel3 {
+    background-color: white;
+    margin: 2%;
+    /* box-shadow: 5px 5px 5px #888888; */
+    width:  96%;
+    /* float: left; */
+}
+
+#panel1 {
+    max-width: 500px;
+    margin: auto;
+}
+
+#yearContainer {
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    background-color: maroon;
+    color: gold;
+}
+footer {
+    text-align: center;
+    background-color: maroon;
+    color: gold;
+}
+
+
+
+.link {
+    text-align-last: center;
+}
