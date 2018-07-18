@@ -41,15 +41,14 @@ body {
 }
 
 .likes {
-    height: 150px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
 .bio {
+    
     width: 100%;
-    height: 260px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
