@@ -3,6 +3,10 @@ h1 {
     margin: 4px;
 }
 
+.list {
+    text-align: center;
+}
+
 .lock {
     text-align: center;
 }
@@ -48,6 +52,9 @@ img {
 }
 
 .home {
+    padding: 7px;
+    border: 2px;
+    border-style: double;
     margin-bottom: 40px; 
     text-indent: 30px;
     font-size: 22pt;
@@ -105,7 +112,7 @@ body {
     margin-top: 10px;
     padding: 3px;
     border: 2px;
-    border-style: dashed;
+    border-style: double;
 }
 
 #ambitions {
@@ -115,7 +122,7 @@ body {
     margin-top: 10px;
     padding: 3px;
     border: 2px;
-    border-style: dashed;
+    border-style: double;
 }
 
 #how {
@@ -125,7 +132,7 @@ body {
     margin-top: 10px;
     padding: 3px;
     border: 2px;
-    border-style: dashed;
+    border-style: double;
 }
 
 h3 {
@@ -174,5 +181,5 @@ footer {
     margin-left: 35%;
     margin-right: 35%;
     padding: 2px;
-    position: absolute; bottom: 10px; 
+    position: absolute; bottom: 0px; 
 }
