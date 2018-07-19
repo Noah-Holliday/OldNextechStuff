@@ -1,16 +1,57 @@
 h1 {
     text-align-last: center;
+    margin: 4px;
+}
+
+.lock {
+    text-align: center;
+}
+
+.game {
+    margin: 30px;
 }
 
 p {
     margin: 4px;
 }
 
-.home {
-    width: 70%;
-    display: flex;
-    align-items: center;
+.links {
     text-align: center;
+}
+
+img {
+    margin-top: 10px; 
+}
+
+.leftpic {
+    margin-left: 10px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-right: 50px;
+}
+
+.rightpic {
+    margin-right: 10px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    margin-left: 50px;
+}
+
+
+.homebody {
+    display: flex;
+    flex-direction: row;
+}
+
+.home {
+    margin-bottom: 40px; 
+    text-indent: 30px;
+    font-size: 22pt;
+    width: 100%;
     background: rgba(0, 0, 0, 0.5);
     color: white;
 }
@@ -20,12 +61,15 @@ p {
 }
 
 header {
+    margin-top: 10px; 
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10px;
     border: 2px;
     border-color: white;
-    padding-bottom: 2px;
+    padding-bottom: 5px;
     border-radius: 25px;
     border-style: double;
-    margin: auto;
     color: white;
     width: 90%;
     position: relative;
@@ -44,10 +88,10 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    text-decoration: none;
 }
 
 .bio {
-    
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -55,7 +99,7 @@ body {
 }
 
 #hobbies {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.75);
     color: white;
     width: 30%;
     margin-top: 10px;
@@ -65,7 +109,7 @@ body {
 }
 
 #ambitions {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.75);
     color: white;
     width: 30%;
     margin-top: 10px;
@@ -75,7 +119,7 @@ body {
 }
 
 #how {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.75);
     color: white;
     width: 30%;
     margin-top: 10px;
@@ -95,13 +139,13 @@ footer {
 ul {
     clear: both;
     width: 42%;
-    background-color: rgba(0, 255, 0, 0.7);
+    background-color: rgba(0, 255, 0, 0.75);
     border: 3px;
     border-style: ridge;
 }
 
 ol {
-    background-color: rgba(255, 0, 0, 0.7);
+    background-color: rgba(255, 0, 0, 0.75);
     width: 42%;
     border: 3px;
     border-style: ridge;
@@ -109,12 +153,26 @@ ol {
 
 a {
     color: white;
+    text-decoration: none;
+    padding: 20px;
 }
 
 .link {
     text-align-last: center;
+    text-decoration: none;
 }
 
 h2 {
     color: white;
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding: 2px;
+    position: absolute; bottom: 10px; 
 }
